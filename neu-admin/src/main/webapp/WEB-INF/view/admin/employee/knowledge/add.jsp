@@ -23,7 +23,7 @@
 				                <div class="form-group">
 				                    <label for="date" class="col-sm-6 control-label">时间</label>
 				                    <div class="col-sm-6">
-										<input class="form-control" id="date" name="date" value="1900-01-01" required="true">
+										<input class="form-control" id="date" name="date" required="true">
 				                    </div>
 				                </div>
 				            </div>
@@ -177,7 +177,8 @@
 
 <script>
 $(function() {
-	$('#date').datetimepicker({format:'yyyy-mm-dd', minView:"month", autoclose:true, language:'zh-CN'});
+	$('#date').val(new Date().format('yyyy-MM-dd'));
+	$('#date').datetimepicker({format:'yyyy-mm-dd', minView:"month", autoclose:true, language:'zh-CN',initialDate:new Date()});
 	$("#rating").select2({data: <%=AdminConstant.Rating.getJSONString(true, false) %>});
 	
 	$("#btnBack").on("click", function(){
