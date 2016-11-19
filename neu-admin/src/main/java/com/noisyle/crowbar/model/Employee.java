@@ -19,7 +19,7 @@ public class Employee extends BaseModel {
 	private Integer score;
 	private Integer rating;
 	private Integer status;
-	//部门
+	//部门信息
 	private String department;
 	//岗位
 	private String post;
