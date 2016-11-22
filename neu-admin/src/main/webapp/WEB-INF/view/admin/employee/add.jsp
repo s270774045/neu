@@ -40,7 +40,7 @@
 		                        <div class="form-group">
 		                            <label for="dateOfBirth" class="col-sm-4 control-label">出生日期</label>
 		                            <div class="col-sm-8">
-										<input class="form-control" id="dateOfBirth" name="dateOfBirth" value="1990-01-01">
+										<input class="form-control" id="dateOfBirth" name="dateOfBirth" value="1986-01-01">
 		                            </div>
 		                        </div>
 		                    </div>

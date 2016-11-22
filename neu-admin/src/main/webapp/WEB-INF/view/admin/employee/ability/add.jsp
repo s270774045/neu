@@ -125,6 +125,8 @@
 
 <script>
 $(function() {
+	$('#startDate').val(new Date().format('yyyy-MM-dd'));
+	$('#endDate').val(new Date().format('yyyy-MM-dd'));
 	$('#startDate').datetimepicker({format:'yyyy-mm-dd', minView:"month", autoclose:true, language:'zh-CN'});
 	$('#endDate').datetimepicker({format:'yyyy-mm-dd', minView:"month", autoclose:true, language:'zh-CN'});
 	$("#catalog").select2({data: <%=AdminConstant.TrainingCatalog.getJSONString(false, false) %>});
