@@ -27,12 +27,12 @@
 </head>
 
 <body style="background-image: url('${ctx}/static/site/img/admin/login-bg.jpg')">
-<script>
-if(window.parent!=window){
-	window.parent.location.href="${ctx}/admin/login";
-}
-</script>
-<%-- <div id="login-carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="null">
+	<script>
+		if (window.parent != window) {
+			window.parent.location.href = "${ctx}/admin/login";
+		}
+	</script>
+	<%-- <div id="login-carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="null">
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -53,69 +53,72 @@ if(window.parent!=window){
   </div>
 </div> --%>
 
-<div id="login-box" class="container">
-   <div class="center-block">
-       <div class="login-panel panel panel-info">
-           <div class="panel-heading ">
-               <h3 class="panel-title text-center">
-               <%-- <spring:message code="login.boxTitle" /> --%>
-                                              员工培养追踪评价系统
-               </h3>
-           </div>
-           <div class="panel-body ">
+	<div id="login-box" class="container">
+		<div class="center-block">
+			<div class="login-panel panel panel-info">
+				<%-- <div class="panel-heading ">
+					<h3 class="panel-title text-center">
+						<spring:message code="login.boxTitle" />
+						员工培养追踪评价系统
+					</h3>
+				</div> --%>
+				<div class="panel-body ">
 					<form role="form" id="loginForm" action="${ctx}/admin/login">
 						<fieldset>
+							<div>
+								<h2 class="text-center">
+									欢迎登陆
+								</h2>
+								<br>
+							</div>
 							<div class="form-group">
 								<div class="input-group">
-									<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
-									<input class="form-control" placeholder="<spring:message code="login.username" />" name="loginname" type="text" value="" required data-bv-notempty-message="<spring:message code="login.requireUsername" />" autofocus />
+									<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> <input class="form-control" placeholder="<spring:message code="login.username" />" name="loginname" type="text" value="" required data-bv-notempty-message="<spring:message code="login.requireUsername" />" autofocus />
 								</div>
 							</div>
 							<div class="form-group">
 								<div class="input-group">
-									<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>  
-									<input class="form-control " placeholder="<spring:message code="login.password" />" name="password" type="password" value="" required data-bv-notempty-message="<spring:message code="login.requirePassword" />" />
+									<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span> <input class="form-control " placeholder="<spring:message code="login.password" />" name="password" type="password" value="" required data-bv-notempty-message="<spring:message code="login.requirePassword" />" />
 								</div>
 							</div>
-							<div class="alert alert-danger" id="msg" style="display:none; padding:5px 15px;"></div>
+							<div class="alert alert-danger" id="msg" style="display: none; padding: 5px 15px;"></div>
 							<div class="checkbox">
-								<label> <input name="rememberMe" type="checkbox">
-								<spring:message code="login.remember" />
+								<label> <input name="rememberMe" type="checkbox"> <spring:message code="login.remember" />
 								</label>
 							</div>
 							<!-- Change this to a button or input when using this as a form -->
-							<button type="submit" class="btn btn-primary">
+							<button type="submit" class="btn btn-info btn-block">
 								<spring:message code="login.btnLogin" />
 							</button>
 						</fieldset>
 					</form>
 				</div>
-        </div>
-    </div>
-</div>
+			</div>
+		</div>
+	</div>
 
-<script src="${ctx}/static/jquery/jquery-1.11.2.min.js"></script>
-<script src="${ctx}/static/bootstrap/js/bootstrap.min.js"></script>
-<script src="${ctx}/static/bootstrapvalidator/js/bootstrapValidator.min.js"></script>
-<script src="${ctx}/static/utils.js"></script>
-<script>
-$(function(){
-    $('#loginForm').bootstrapValidator().on('success.form.bv', function(e) {
-        e.preventDefault();
-        var form = e.target;
-		var data = $(form).serializeObject();
-		data.password = $.md5(data.password).toUpperCase();
-		data.rememberMe = $('[name=rememberMe]').prop("checked");
-		$.post(form.action, data, function(r){
-			if(r.status=='SUCCESS'){
-				window.location.href="${ctx}/admin";
-			}else{
-				$("#msg").text(r.message).show();
-			}
-		}, 'json');
-    });
-});
-</script>
+	<script src="${ctx}/static/jquery/jquery-1.11.2.min.js"></script>
+	<script src="${ctx}/static/bootstrap/js/bootstrap.min.js"></script>
+	<script src="${ctx}/static/bootstrapvalidator/js/bootstrapValidator.min.js"></script>
+	<script src="${ctx}/static/utils.js"></script>
+	<script>
+		$(function() {
+			$('#loginForm').bootstrapValidator().on('success.form.bv', function(e) {
+				e.preventDefault();
+				var form = e.target;
+				var data = $(form).serializeObject();
+				data.password = $.md5(data.password).toUpperCase();
+				data.rememberMe = $('[name=rememberMe]').prop("checked");
+				$.post(form.action, data, function(r) {
+					if (r.status == 'SUCCESS') {
+						window.location.href = "${ctx}/admin";
+					} else {
+						$("#msg").text(r.message).show();
+					}
+				}, 'json');
+			});
+		});
+	</script>
 </body>
 
 </html>
