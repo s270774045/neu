@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     
-	<title>员工培养追踪评价</title>
+	<title>员工技能培养追踪评价系统</title>
 	<link rel="shortcut icon" href="${ctx}/static/site/img/favicon.ico" />
 	<link href="${ctx}/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="${ctx}/static/metisMenu/metisMenu.min.css" rel="stylesheet">
@@ -40,8 +40,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button> -->
-                <img class="img-responsive navbar-left" width="80" src="${ctx}/static/site/img/admin/SRLOGO.png" alt="">
-                <a class="navbar-brand" href="${ctx}/">员工培养追踪评价</a>
+                <img class="img-responsive navbar-left" width="100" src="${ctx}/static/site/img/admin/SHSR.png" alt="">
+                <a class="navbar-brand" href="${ctx}/">&nbsp;&nbsp;员工技能培养追踪评价系统</a>
             </div>
             <!-- /.navbar-header -->
 				<div id="navbar" class="navbar-collapse collapse">

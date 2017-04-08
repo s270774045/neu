@@ -111,7 +111,7 @@
 				data.rememberMe = $('[name=rememberMe]').prop("checked");
 				$.post(form.action, data, function(r) {
 					if (r.status == 'SUCCESS') {
-						window.location.href = "${ctx}/admin";
+						window.location.href = "${ctx}/";
 					} else {
 						$("#msg").text(r.message).show();
 					}

@@ -4,13 +4,13 @@
 	<div class="row">
 		<div class="col-sm-2" style="padding-top:20px;">
 			<div class="list-group">
-				<a href="" class="list-group-item active"><i class="fa fa-address-book"></i>&nbsp; 员工简历</a>
-				<a href="" class="list-group-item"><i class="fa fa-book"></i>&nbsp; 专业知识</a>
-				<a href="" class="list-group-item"><i class="fa fa-briefcase"></i>&nbsp; 业务能力</a>
-				<a href="" class="list-group-item"><i class="fa fa-gavel"></i>&nbsp; 行为标准</a>
-				<a href="" class="list-group-item"><i class="fa fa-flag"></i>&nbsp; 创新经验</a>
-				<a href="" class="list-group-item"><i class="fa fa-search"></i>&nbsp; 综合能力</a>
-				<a href="" class="list-group-item"><i class="fa fa-check-square"></i>&nbsp; 评估鉴定</a>
+				<a href="" class="list-group-item active text-center"><i class="fa fa-address-book"></i>&nbsp; 员工简历</a>
+				<a href="" class="list-group-item text-center"><i class="fa fa-book"></i>&nbsp; 基础技能</a>
+				<a href="" class="list-group-item text-center"><i class="fa fa-briefcase"></i>&nbsp; 中级技能</a>
+				<a href="" class="list-group-item text-center"><i class="fa fa-gavel"></i>&nbsp; 高级技能</a>
+				<a href="" class="list-group-item text-center"><i class="fa fa-search"></i>&nbsp; 创新成果</a>
+				<a href="" class="list-group-item text-center"><i class="fa fa-flag"></i>&nbsp; 获奖成绩</a>
+				<a href="" class="list-group-item text-center"><i class="fa fa-check-square"></i>&nbsp; 综合评估</a>
 			</div>
 		</div>
 
@@ -88,7 +88,7 @@
 			</div> -->
 			<div class="row detail-section">
 				<div class="col-md-12">
-					<h2><i class="fa fa-book"></i> 专业知识 <small>专项考试</small></h2>
+					<h2><i class="fa fa-book"></i> 基础技能 <small>专项考试</small></h2>
 					<hr />
 					<table class="table table-striped table-bordered table-hover detail-table">
 						<thead>

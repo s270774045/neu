@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-lg-12">
             <h1 class="page-header">黄骅港电务工队
-                <small>员工培养追踪评价系统</small>
+                <small>员工技能培养追踪评价系统</small>
             </h1>
         </div>
     </div>

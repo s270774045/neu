@@ -27,8 +27,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button> -->
-      <img class="img-responsive navbar-left" width="80" ng-src="${ctx}/static/site/img/admin/SRLOGO.png" alt="">
-      <a class="navbar-brand" ui-sref="list" ui-sref-opts="{reload: true}">员工培养追踪评价系统</a>
+      <img class="img-responsive navbar-left" width="100" ng-src="${ctx}/static/site/img/admin/SHSR.png" alt="">
+      <a class="navbar-brand" ui-sref="list" ui-sref-opts="{reload: true}">&nbsp;&nbsp;员工技能培养追踪评价系统</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
